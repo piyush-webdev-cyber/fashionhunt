@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Ruler } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 function ProductCard({ product }) {
   const [current, setCurrent] = useState(0);
+  const [showSizeChart, setShowSizeChart] = useState(false);
   const navigate = useNavigate();
 
   const prev = () =>
@@ -60,6 +61,33 @@ function ProductCard({ product }) {
       <h1 className="mt-4 font-bold text-xl">{product.name}</h1>
       <p className="text-sm mt-2">{product.description}</p>
       <p className="font-bold mt-3">${product.price}.00</p>
+      
+      {/* Size Chart Link */}
+      <button 
+        onClick={() => setShowSizeChart(!showSizeChart)}
+        className="mt-3 flex items-center gap-2 text-sm text-blue-600 hover:text-blue-800 transition-colors"
+      >
+        <Ruler size={16} />
+        Size Guide
+      </button>
+      
+      {/* Size Chart Image */}
+      {showSizeChart && (
+        <div className="mt-4 p-4 bg-gray-50 rounded-lg">
+          <h3 className="text-sm font-semibold mb-2">Size Chart</h3>
+          <img 
+            src="https://images.pexels.com/photos/1109354/pexels-photo-1109354.jpeg" 
+            alt="Size Chart"
+            className="w-full h-48 object-cover rounded-md"
+          />
+          <button 
+            onClick={() => setShowSizeChart(false)}
+            className="mt-2 text-xs text-gray-500 hover:text-gray-700"
+          >
+            Close size chart
+          </button>
+        </div>
+      )}
     </div>
   );
 }

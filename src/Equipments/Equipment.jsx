@@ -9,7 +9,7 @@ export default function Equipment() {
   const [men, setMen] = useState([]);
   const [women, setWomen] = useState([]);
   const [child, setChild] = useState([]);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     getProductsByCategory("accessories").then(setAccessories);
@@ -60,7 +60,10 @@ export default function Equipment() {
         <h1 className="text-4xl sm:text-6xl font-bold text-white">
           Our Story
         </h1>
-        <button className="mt-6 px-8 py-3 bg-white rounded-full font-semibold hover:bg-gray-200 transition">
+        <button 
+          onClick={() => navigate('/about')}
+          className="mt-6 px-8 py-3 bg-white rounded-full font-semibold hover:bg-gray-200 transition cursor-pointer"
+        >
           About Us
         </button>
       </div>

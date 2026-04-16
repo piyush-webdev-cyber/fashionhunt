@@ -1,7 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 function Explore() {
+  const navigate = useNavigate()
   return (
     <div className="w-full text-white mt-10 mb-10">
 
@@ -31,7 +33,11 @@ function Explore() {
             Shop Everything We Got
           </h3>
 
-          <button className="bg-white text-black px-6 py-3 rounded-full font-bold hover:text-white hover:bg-black transition">
+          <button className="bg-white text-black px-6 py-3 rounded-full font-bold hover:text-white hover:bg-black transition"
+            onClick={() => navigate('/equipment')}
+          >
+
+          
             Explore
           </button>
 
