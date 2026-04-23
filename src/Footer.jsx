@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { ArrowRight, Globe, ChevronDown } from "lucide-react";
+import { ArrowRight, Globe, ChevronDown, MessageCircle } from "lucide-react";
 
 function Footer() {
   const options = [
@@ -46,18 +46,20 @@ function Footer() {
         </div>
       </div>
 
-      {/* Email Signup */}
-      <div className="w-full bg-blue-300 rounded-3xl flex flex-col sm:flex-row items-center justify-between px-6 sm:px-10 py-6 sm:py-0 h-auto sm:h-32">
-        <input
-          type="email"
-          placeholder="Drop your Email for $15"
-          className="
-            w-full sm:w-[85%] h-14 sm:h-full text-xl sm:text-4xl
-            border-0 outline-none bg-transparent placeholder:text-black
-          "
-        />
+      {/* WhatsApp Booking */}
+      <div 
+        onClick={() => window.open('https://wa.me/917876162110?text=Enquiry: Hi, I would like to know more about your products on Fashion Hunt website.', '_blank')}
+        className="w-full bg-green-500 hover:bg-green-600 transition-colors rounded-3xl flex flex-col sm:flex-row items-center justify-between px-6 sm:px-10 py-6 sm:py-0 h-auto sm:h-32 cursor-pointer"
+      >
+        <div className="flex items-center gap-4">
+          <MessageCircle size={32} strokeWidth={2} className="text-white" />
+          <div className="text-white">
+            <p className="text-xl sm:text-2xl font-semibold">Book via WhatsApp</p>
+            <p className="text-sm sm:text-base opacity-90">Get instant assistance for your orders</p>
+          </div>
+        </div>
         <div className="mt-4 sm:mt-0">
-          <ArrowRight size={48} strokeWidth={1.5} className="cursor-pointer" />
+          <ArrowRight size={48} strokeWidth={1.5} className="text-white" />
         </div>
       </div>
 
@@ -75,7 +77,7 @@ function Footer() {
           },
           {
             title: "Social",
-            links: ["Instagram", "Facebook", "Twitter"]
+            links: ["Instagram", "Faceboo k", "Twitter"]
           }
         ].map((section, idx) => (
           <div key={idx}>
