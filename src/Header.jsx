@@ -53,7 +53,7 @@ function Header() {
 
             {/* LOGO */}
             <div className="absolute left-1/2 -translate-x-1/2 font-bold text-xl">
-              <Link to="/">Fashion Hunt</Link>
+              <Link to="/">Style Hunt</Link>
             </div>
 
             {/* CART ICON */}

@@ -9,6 +9,12 @@ function Footer() {
     "Australia ($)"
   ];
 
+  const phoneNumber = "919815204055";
+  const displayPhone = "+91 98152-04055";
+  const businessEmail = "varmmeetkumar07@gmail.com";
+  const primaryEmail = "vareetkumar07@gmail.com";
+  const secondaryEmail = "stylehuntjalandhar@gmail.com";
+
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState("India (₹)");
   const dropdownRef = useRef(null);
@@ -48,7 +54,7 @@ function Footer() {
 
       {/* WhatsApp Booking */}
       <div 
-        onClick={() => window.open('https://wa.me/917876162110?text=Enquiry: Hi, I would like to know more about your products on Fashion Hunt website.', '_blank')}
+        onClick={() => window.open(`https://wa.me/${phoneNumber}?text=Enquiry: Hi, I would like to know more about your products on Style Hunt website.`, '_blank')}
         className="w-full bg-green-500 hover:bg-green-600 transition-colors rounded-3xl flex flex-col sm:flex-row items-center justify-between px-6 sm:px-10 py-6 sm:py-0 h-auto sm:h-32 cursor-pointer"
       >
         <div className="flex items-center gap-4">
@@ -60,6 +66,30 @@ function Footer() {
         </div>
         <div className="mt-4 sm:mt-0">
           <ArrowRight size={48} strokeWidth={1.5} className="text-white" />
+        </div>
+      </div>
+
+      {/* Business Details */}
+      <div className="mt-12 border-t pt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-base sm:text-lg">
+        <div>
+          <h3 className="font-bold mb-2">Style Hunt</h3>
+          <p>Clothing Business</p>
+          <p>GSTIN: 03ACRPC0386N1ZE</p>
+        </div>
+        <div>
+          <h3 className="font-bold mb-2">Deals In</h3>
+          <p>All Kinds of Readymade, Old & Used Worn Mix Clothing</p>
+        </div>
+        <div>
+          <h3 className="font-bold mb-2">Contact</h3>
+          <p>Ph: {displayPhone}</p>
+          <p>{businessEmail}</p>
+          <p>{primaryEmail}</p>
+          <p>{secondaryEmail}</p>
+        </div>
+        <div>
+          <h3 className="font-bold mb-2">Address</h3>
+          <p>EQ 198, Pacca Bagh, Rainak Bazar, Jalandhar City, India</p>
         </div>
       </div>
 
@@ -149,7 +179,7 @@ function Footer() {
 
         {/* Bottom Links */}
         <div className="flex flex-wrap gap-6 text-sm sm:text-base">
-          <h3>FashionHunt Equipment Company 2026</h3>
+          <h3>Style Hunt Clothing Business 2026</h3>
 
           {["Privacy", "Cookies", "Terms"].map((item) => (
             <h3

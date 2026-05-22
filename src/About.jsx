@@ -5,11 +5,13 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white text-black">
       {/* Hero Section */}
-      <div className="relative h-[70vh] bg-cover bg-center flex items-center justify-center" 
-           style={{ backgroundImage: `url("https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg")` }}>
+      <div
+        className="relative h-[70vh] bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url("https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg")` }}
+      >
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative text-center px-6 z-10">
-          <h1 className="text-5xl sm:text-7xl font-bold mb-6 text-white">About Fashion Hunt</h1>
+          <h1 className="text-5xl sm:text-7xl font-bold mb-6 text-white">About Style Hunt</h1>
           <p className="text-xl text-gray-100 max-w-3xl mx-auto">
             Your destination for premium fashion and accessories
           </p>
@@ -23,19 +25,22 @@ export default function About() {
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold mb-8">Our Story</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Founded with a passion for quality and style, Fashion Hunt has been serving fashion enthusiasts 
-                with carefully curated collections since our inception. We believe that fashion is not just about 
-                clothing—it's about expressing your unique identity and confidence.
+                Founded with a passion for quality and style, Style Hunt has been serving fashion enthusiasts
+                from EQ 198, Pacca Bagh, Rainak Bazar, Jalandhar City, India. We believe that fashion is not just about
+                clothing - it's about expressing your unique identity and confidence.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Our journey began with a simple mission: to provide high-quality, fashionable accessories and 
-                clothing that cater to diverse tastes and preferences. From premium technical gear to everyday 
-                essentials, we've built a reputation for excellence and customer satisfaction.
+                We deal in all kinds of readymade, old and used worn mix clothing with a simple mission: to provide
+                quality clothing that caters to diverse tastes and preferences. For enquiries, contact
+                varmmeetkumar07@gmail.com, vareetkumar07@gmail.com, stylehuntjalandhar@gmail.com, or +91 98152-04055.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                GSTIN: 03ACRPC0386N1ZE. Employer: Mr Vareet Kumar, owner of Style Hunt.
               </p>
             </div>
             <div className="relative h-96 rounded-2xl overflow-hidden">
-              <img 
-                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg" 
+              <img
+                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
                 alt="Fashion store interior"
                 className="w-full h-full object-cover"
               />
@@ -51,8 +56,8 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="h-48 overflow-hidden">
-                <img 
-                  src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg" 
+                <img
+                  src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg"
                   alt="Quality craftsmanship"
                   className="w-full h-full object-cover"
                 />
@@ -66,8 +71,8 @@ export default function About() {
             </div>
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="h-48 overflow-hidden">
-                <img 
-                  src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg" 
+                <img
+                  src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg"
                   alt="Fashion style"
                   className="w-full h-full object-cover"
                 />
@@ -81,8 +86,8 @@ export default function About() {
             </div>
             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
               <div className="h-48 overflow-hidden">
-                <img 
-                  src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" 
+                <img
+                  src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg"
                   alt="Customer service"
                   className="w-full h-full object-cover"
                 />
@@ -105,7 +110,7 @@ export default function About() {
           <p className="text-xl text-gray-600 mb-8">
             Discover our latest collections and find your perfect style
           </p>
-          <Link 
+          <Link
             to="/equipment"
             className="inline-block px-8 py-4 bg-black text-white rounded-full font-semibold hover:bg-gray-800 transition-colors"
           >

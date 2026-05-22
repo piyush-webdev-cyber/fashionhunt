@@ -49,7 +49,7 @@ export default function ProductPage() {
       <div className="flex flex-col px-10 md:px-16 lg:px-20 pt-36 mt-10 text-black">
 
         <p className="text-sm tracking-widest uppercase mb-6 text-gray-500">
-          Fashion Hunt.
+          Style Hunt.
         </p>
 
         <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight mb-3">

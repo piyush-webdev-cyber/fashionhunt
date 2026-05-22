@@ -42,7 +42,7 @@ function Checkout() {
       key: "rzp_test_SAaR4i5T0MYaYY", // ONLY test key_id
       amount: order.amount,
       currency: "INR",
-      name: "Fashion Hunt",
+      name: "Style Hunt",
       description: "Order Payment",
       order_id: order.id,
 
