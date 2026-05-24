@@ -52,7 +52,7 @@ export default function ProductPage() {
           Style Hunt.
         </p>
 
-        <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight mb-3">
+        <h1 className="text-4xl md:text-5xl sm:font-serif font-bold leading-tight mb-3">
           {product.title}
         </h1>
 

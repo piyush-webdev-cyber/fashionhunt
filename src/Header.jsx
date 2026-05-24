@@ -84,7 +84,7 @@ function Header() {
                   key={item.name}
                   to={item.path}
                   onClick={() => setMenuOpen(false)}
-                  className="flex justify-between text-2xl font-serif cursor-pointer"
+                  className="flex justify-between text-2xl sm:font-serif cursor-pointer"
                   style={{ animationDelay: `${i * 100}ms` }}
                 >
                   <span>{item.name}</span>
@@ -117,7 +117,7 @@ function Header() {
             {/* CONTENT */}
             <div className="px-6 py-6 space-y-6 overflow-y-auto h-[calc(100vh-240px)]">
               {cart.length === 0 && (
-                <h2 className="text-2xl font-serif font-bold">
+                <h2 className="text-2xl sm:font-serif font-bold">
                   Your Cart Is Empty
                 </h2>
               )}
