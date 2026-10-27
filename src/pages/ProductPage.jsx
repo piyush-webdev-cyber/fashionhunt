@@ -57,7 +57,7 @@ export default function ProductPage() {
         </h1>
 
         <p className="text-lg font-semibold mb-6">
-          ${product.price}
+          ₹{product.price}
         </p>
 
         <p className="text-gray-600 leading-relaxed max-w-xl mb-10">
@@ -161,7 +161,7 @@ export default function ProductPage() {
         </button>
 
         <p className="text-sm text-center mt-4 text-gray-600 max-w-xl">
-          Free & Easy Return or Exchange Coverage for $2.98
+          Free & Easy Return or Exchange Coverage for ₹2.98
         </p>
       </div>
     </section>

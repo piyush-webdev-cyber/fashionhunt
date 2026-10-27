@@ -116,7 +116,7 @@ function ProductGrid({ products }) {
           </p>
 
           <h4 className="mt-2 font-bold">
-            ${item.price}
+            ₹{item.price}
           </h4>
 
         </div>

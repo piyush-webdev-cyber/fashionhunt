@@ -164,7 +164,7 @@ function Header() {
                   </div>
 
                   <p className="font-semibold">
-                    ${item.price * item.qty}
+                    ₹{item.price * item.qty}
                   </p>
                 </div>
               ))}

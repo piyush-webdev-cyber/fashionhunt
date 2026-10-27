@@ -55,7 +55,7 @@ function Women() {
               </p>
 
               <h3 className="font-bold text-sm sm:text-base">
-                ${item.price}
+                ₹{item.price}
               </h3>
 
               {/* Color Dots (UI Only) */}

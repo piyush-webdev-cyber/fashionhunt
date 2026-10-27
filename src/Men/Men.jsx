@@ -52,7 +52,7 @@ function Men() {
                   {item.description}
                 </p>
                 <p className="mt-2 font-semibold text-lg">
-                  ${item.price}
+                  ₹{item.price}
                 </p>
               </div>
 
